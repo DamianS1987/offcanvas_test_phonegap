@@ -25,6 +25,12 @@
           -webkit-transform: translate3d(0,0,0);
           overflow: hidden;
       }
+      .wrapper {
+        height: 500px;
+      }
+      .wrapper > div {
+        height: 500px;
+      }
   </style>
 
 	<!-- Included CSS Files -->
@@ -35,7 +41,12 @@
 
 </head>
 
-  <body id="page" class="off-canvas">
+  <body height= "500" width="500" id="page" class="off-canvas">
+    <div class="wrapper">
+        <div height= "500" width="500"  id="stage"></div>
+    </div>
+<!--
+
 	<div class="container">
 
 		<header id="header" class="row">
@@ -97,17 +108,16 @@
     </footer>
   </div>
 
+-->
+
+</body>
 
   <script type="text/javascript" src="cordova.js"></script>
-
   <script type="text/javascript" src="javascripts/index.js"></script>
-  <script type="text/javascript">
-      app.initialize();
-  </script>
 
   <script src="javascripts/modernizr.js"></script>
 
-	<!-- Included JS Files -->
+  <!-- Included JS Files -->
   <script src="javascripts/foundation/jquery.js"></script>
   <script src="javascripts/foundation/jquery.foundation.reveal.js"></script>
   <script src="javascripts/foundation/jquery.foundation.orbit.js"></script>
@@ -121,6 +131,13 @@
   <script src="javascripts/foundation/jquery.foundation.mediaQueryToggle.js"></script>
   <script src="javascripts/foundation/jquery.foundation.tabs.js"></script>
   <script src="javascripts/foundation/jquery.offcanvas.js"></script>
+  <script src="https://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+  <script type="text/javascript" src="javascripts/foundation/skateboard.js"></script>
   <script src="javascripts/foundation/app.js"></script>
 
-</body>
+  <script type="text/javascript">
+      app.initialize();
+  </script>
+
+
+</html>
